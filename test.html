@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>Formulaire d'enregistrement</title>
+	<link rel="stylesheet" type="text/css" href="test.css"/>
+</head>
+<body>
+    <h1>Formulaire d'inscription</h1>
+    <p>Renseigner vos les informations demandées via le formulaire ci-dessous:</p>
+    <form method="POST" action="">
+    	<fieldset>
+    		<legend>Informations personnelles</legend><br/>
+    		<div class="last-name">
+    			<label for="last-name">Nom</label><br/>
+    		    <input type="text" class="area" name="last-name" id="last-name" required/>
+    		</div>
+    		
+             <div class="first-name">
+             	<label for="first-name">Prénom</label><br/>
+    		    <input type="text" class="area" name="first-name" id="first-name" required/>
+             </div>
+    		
+             <div class="age">
+             	<label for="age">Date de naissance</label><br/>
+    		    <input type="date" class="area" name="age" id="age" required/>
+             </div>
+    		
+             <div class="place-born">
+             	<label for="place-born">Lieu de naissance</label><br/>
+    		    <input type="text" class="area" name="place-born" id="place-born" required/>
+             </div>
+    	
+    	</fieldset><br/><br/>
+
+          <div class="btn">
+          	<input type="submit" class="btn-validate" name="validate" value="Valider" id="validate"/>
+            <input type="reset" name="remove" class="btn-remove" value="Suppprimer" id="remove"/>
+          </div>
+         
+    </form>
+</body>
+</html>
